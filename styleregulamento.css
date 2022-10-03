@@ -1,0 +1,69 @@
+.navegar{
+    width: 100px;
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+    background: linear-gradient(72deg, rgb(59, 134, 233), purple);
+    border-radius: 5px 5px 5px 5px;
+    margin: auto;
+}
+h2, h3, h4{
+    text-align: center;
+    font-size: 25px;
+    color: #000;
+    background-color: #eee;
+}
+.reg{
+    width: 940px;
+    margin: 20px auto;
+    border-radius: 5x 5x 0 0;
+    border: 1px solid #fff;
+    background-color: #eee;
+}
+.texto{
+    padding: 25px;
+    margin: auto;
+    border-radius: 5px 5px 0 0;
+    letter-spacing: 1px;
+    color: #000;
+    text-align: justify;
+    text-indent: 25px;
+    background-color: #eee;
+}
+span{
+    font-size: 40px;
+    color: #000;
+    background-color: #eee;
+}
+.booster{
+    width: 600px;
+    height: 300px;
+    border: 2.5px solid #fff;
+    margin: auto;
+}
+@media screen and (max-width: 940px) {
+    body{
+    width: 320px;
+    margin: auto;
+    }
+    .navegar{
+    background: linear-gradient(72deg, rgb(59, 134, 233), purple);
+    }
+    #banner_premium{
+    width: 100%;
+    margin: auto;
+    }
+    #titulo{
+    width: none;
+    }
+    .reg{
+    width: 320px;
+    margin: 20px auto;   
+    }
+    .texto{
+    margin: auto;
+    }
+    h2, h3, h4{
+    font-size: 15px;    
+    }
+}

@@ -1,155 +1,195 @@
-*{
+body{
+    background-image: url(imagens/gramado.png);
+}
+
+img{
+    width: 80%;
+}
+
+nav{
+    height: 125px;
+    border: 1px solid rgb(0, 0, 0);
     background-color: #000;
 }
-body{
+
+.copy{
     margin: auto;
-    border: 1px solid black;
-}
-#corbackground{
-    background-color: #16003B;
-}
-#titulo{
-    height: 50px;
-    font-size: 50px;
-    font-weight: bold;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-align: center;
-    margin:auto;
-    border-radius: 0 0 5px 5px;
-    background-color: #2155CD;
-    color: #FFE59D;
-    margin-bottom: 10px;
+    width: 400px;
+    height: 15px;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: #000;
+    color: #fff;
+    border: 1px 1px 1px 1px;
     padding: 10px;
 }
-h1{
-    text-align: center;
+
+.navegador1{
+    margin: 10px;
+    background-color: #244967;
+    padding: 5px;
+    border-radius: 10px;
 }
-#logo{
-    width: 300px;
-    height: 300px;
-    margin: auto;
+
+.navegador{
+    margin: 10px;
 }
-.navegar{
-    width: 650px;
-    text-align: center;
-    margin-top: 20px;
-    cursor: pointer;
-    background: linear-gradient(72deg, rgb(59, 134, 233), purple);
-    border-radius: 5px 5px 5px 5px;
-    margin: auto;
-}
-.texto_nav{
-    height: 20px;
-    margin: 5px;
-    font-size: 20px;
-    text-decoration: none;
-    font-weight: bold;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: #fff;
-    cursor: pointer;
-    border-radius: 5px 5px 5px 5px;
-    padding: 15px;
-    display: inline-block;
-    background-color: rgba(53, 171, 240, 0.89);
-    box-shadow: 0px 2px 2px 0 #000;
-}
-.texto_nav:hover{
-    transition: 1s all;
-    transform: scale(1.1);
-}
-#van{
-    margin-bottom: 15px;
-    text-align: center;
-    font-size: 35px;
-    font-weight: bold;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: #fff;
-}
-.rodape{
-    text-align: center;
+
+.logo{
+    float: left;
+    width: 125px;
+    height: 125px;
+    border-radius: 0 0 5px 5px;
     background-color: #000;
 }
-#copy{
-    height: 40px;
-    border: 1px solid black;
+
+a{
     color: #fff;
-    font-weight: bold;
-}
-#premium{
-    color: #FFE59D;
-    padding-top: 15px;
-    font-weight: bold;
-}
-li{
-    color: #fff;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-}
-#div{
-    width: 1000px;
-    height: 500px;
-    border: 1px solid #82DBD8;
-    background-color: #548CFF;
-    border-radius: 2px 2px 2px 2px;
-    padding: 20px;
-    margin: auto;
-}
-#ul{
-    margin: auto;
-}
-#inicio_saiba{
-    width: 180px;
-    height: 25px;
-    background-color: #548CFF;
-    border-radius: 0 5px 0 5px;
-    text-indent: 10px;
-}
-.vantagenspremium{
-    font-size: 18px;
-    display: inline;
-}
-#div_texto_vantagens_premium{
-    width: 300px;
-    height: 200px;
-    border: 1px solid black;
-    float: right;
-}
-.titulo_vip_comum_beneficios{
-    max-width: 940px;
-    min-width: 320px;
-    border: 1px solid #fff;
-    margin: auto;
-}
-#Prem{
-    font-size: 18px;
-    text-decoration: underline;
-    color: #FFE59D; 
-    font-weight: bold;
+    text-decoration: none;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    text-indent: 10px;
+    font-weight: bold;
+    font-size: 25px;
+    box-shadow: 10px #000;
 }
-.banner{
-    max-width: 960px;
+
+a:hover{
+    color: lightyellow;
+}
+
+header{
+    padding: 50px;
     margin: auto;
+    text-align: center;
 }
-#banner_premium{
-    width: 100%;
+
+h1{
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+    box-shadow: 10px #000;
+    padding: 25px;
 }
-@media screen and (max-width: 940px) {
-    .navegar{
-    width: 100%;
-    background: linear-gradient(72deg, rgb(59, 134, 233), purple);
+
+.slider{
+    margin: 0 auto;
+    width: 1000px;
+    height: 540px;
+    overflow: hidden;
+}
+
+.slides{
+    width: 400%;
+    height: 540px;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 25%;
+    position: relative;
+    transition: 1.5s;
+}
+
+.manual-navigation{
+    position: absolute;
+    width: 800px;
+    margin-top: -150px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid #000;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background-color: #000;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+#radio3:checked ~ .first{
+    margin-left: -50%;
+}
+#radio4:checked ~ .first{
+    margin-left: -75%;
+}
+.navigation-auto div{
+    border: 2px solid rgb(143, 235, 143);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.navigation-auto{
+    position: absolute;
+    width: 800px;
+    margin-top: 390px;
+    display: flex;
+    justify-content: center;
+}
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+#radio1:checked ~.navigation-auto .auto-btn1{
+    background-color: #000;
+}
+#radio2:checked ~.navigation-auto .auto-btn2{
+    background-color: #000;
+}
+#radio3:checked ~.navigation-auto .auto-btn3{
+    background-color: #000;
+}
+#radio4:checked ~.navigation-auto .auto-btn4{
+    background-color: #000;
+}
+
+@media screen and (max-width: 412px) {
+    img{
+    width: 32%;
+    float: left;
+    }  
+    header{
+    text-align: center;
+    padding: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    color: antiquewhite;
     }
-    #banner_premium{
-    width: 100%;
+    .navegador1{
+    margin: -10px;
+    background-color: #244967;
+    padding: 5px;
+    border-radius: 10px;
+    }
+    .navegador{
+    margin: 10px;
+    }
+    .copy{
     margin: auto;
-    }
-    #titulo{
-    width: 300px;
-    height: 110px;
-    margin:auto;
-    }
-    #copy{
-    width: 320px;   
+    width: 50%;
+    height: 15px;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: #000;
+    color: #fff;
+    border: 1px 1px 1px 1px;
+    padding: 10px;
+    font-size: 10px;
     }
 }

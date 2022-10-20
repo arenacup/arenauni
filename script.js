@@ -1,25 +1,17 @@
-'use strict'
+let count = 1;
 
-const menuSize = '250px';
+document.getElementById('radio1').checked = true;
 
-let open = true;
+setInterval( function() {
+    nextImage();
+}, 60000);
 
-document.querySelector('#btnMenu').addEventListener('click', e => {
-    open = !open;
-    toggleMenu();
-})
+function nextImage(){
 
-document.querySelector('#btnClose').addEventListener('click', e => {
-    open = false;
-
-    toggleMenu();
-})
-
-function toggleMenu() {
-    if (open) {
-        document.querySelector('#menu').style.marginLeft = 0;
-        return;
+    count++;
+    if(count > 4) {
+    count = 1;
     }
 
-    document.querySelector('#menu').style.marginLeft = `-${menuSize}`;
+    document.getElementById('radio'+count).checked = true;
 }

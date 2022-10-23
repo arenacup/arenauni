@@ -163,11 +163,101 @@ h1{
     background-color: #000;
 }
 
-@media screen and (max-width: 320px) {
-    img{
-    width: 32%;
-    float: left;
-    }  
+@media screen and (max-width: 1200px) {
+    .slider{
+    margin: 0 auto;
+    width: 380px;
+    height: 540px;
+    overflow: hidden;
+    }
+    
+    .slides{
+    width: 400%;
+    height: 540px;
+    display: flex;
+    }
+    
+    .slides input{
+    display: none;
+    }
+    
+    .slide{
+    width: 25%;
+    position: relative;
+    transition: 1.5s;
+    }
+    
+    .manual-navigation{
+    position: absolute;
+    width: 400px;
+    margin-top: -340px;
+    display: flex;
+    justify-content: center;
+    }
+    
+    .manual-btn{
+    border: 2px solid #000;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+    }
+    
+    .manual-btn:not(:last-child){
+    margin-right: 40px;
+    }
+    
+    .manual-btn:hover{
+    background-color: #000;
+    }
+    
+    #radio1:checked ~ .first{
+    margin-left: 0;
+    }
+    #radio2:checked ~ .first{
+    margin-left: -25%;
+    }
+    #radio3:checked ~ .first{
+    margin-left: -50%;
+    }
+    #radio4:checked ~ .first{
+    margin-left: -75%;
+    }
+    .navigation-auto div{
+    border: 2px solid rgb(143, 235, 143);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+    }
+    .navigation-auto{
+    position: absolute;
+    width: 400px;
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    }
+    .navigation-auto div:not(:last-child){
+    margin-right: 40px;
+    }
+    #radio1:checked ~.navigation-auto .auto-btn1{
+    background-color: #000;
+    }
+    #radio2:checked ~.navigation-auto .auto-btn2{
+    background-color: #000;
+    }
+    #radio3:checked ~.navigation-auto .auto-btn3{
+    background-color: #000;
+    }
+    #radio4:checked ~.navigation-auto .auto-btn4{
+    background-color: #000;
+    }
+    .navegador{
+    font-size: 15px;
+    }
+    .navegador1{
+    font-size: 25px;
+    }
     .vips{
     width: 100%;
     }
@@ -188,12 +278,12 @@ h1{
     margin: 10px;
     }
     .copy{
-        margin: 200px auto;
-        height: 15px;
-        color: #fff;
-        border: 1px 1px 1px 1px;
-        padding: 10px;
-        font-size: 25px;
-        font-weight: bold;
+    margin: 200px auto;
+    height: 10px;
+    color: #fff;
+    border: 1px 1px 1px 1px;
+    padding: 0px;
+    font-size: 25px;
+    font-weight: bold;
     }
 }

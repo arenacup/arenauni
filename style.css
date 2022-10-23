@@ -6,6 +6,10 @@ img{
     width: 80%;
 }
 
+.vips{
+    width: 50%;
+}
+
 nav{
     height: 125px;
     border: 1px solid rgb(0, 0, 0);
@@ -13,14 +17,13 @@ nav{
 }
 
 .copy{
-    margin: auto;
-    width: 400px;
+    margin: 50px auto;
     height: 15px;
-    border: 1px solid rgb(0, 0, 0);
-    background-color: #000;
     color: #fff;
     border: 1px 1px 1px 1px;
     padding: 10px;
+    font-size: 25px;
+    font-weight: bold;
 }
 
 .navegador1{
@@ -160,11 +163,14 @@ h1{
     background-color: #000;
 }
 
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 320px) {
     img{
     width: 32%;
     float: left;
     }  
+    .vips{
+    width: 100%;
+    }
     header{
     text-align: center;
     padding: 50px;
@@ -182,14 +188,12 @@ h1{
     margin: 10px;
     }
     .copy{
-    margin: auto;
-    width: 50%;
-    height: 15px;
-    border: 1px solid rgb(0, 0, 0);
-    background-color: #000;
-    color: #fff;
-    border: 1px 1px 1px 1px;
-    padding: 10px;
-    font-size: 10px;
+        margin: 200px auto;
+        height: 15px;
+        color: #fff;
+        border: 1px 1px 1px 1px;
+        padding: 10px;
+        font-size: 25px;
+        font-weight: bold;
     }
 }

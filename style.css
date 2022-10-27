@@ -23,6 +23,18 @@ body{
     color: rgb(255, 255, 255);
     font-style: italic;
 }
+.pre-texto4{
+    color: rgb(255, 242, 67);
+    font-style: italic;
+}
+.pre-texto5{
+    color: rgb(86, 67, 255);
+    font-style: italic;
+}
+.pre-texto6{
+    color: rgb(255, 120, 67);
+    font-style: italic;
+}
 .texto{
     width: 600px;
     height: 35px;

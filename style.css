@@ -51,7 +51,11 @@ img{
 }
 
 .vips{
-    width: 50%;
+    width: 25%;
+    height: 550px;
+    background-color: #fff;
+    padding: 10px;
+    margin: auto;
 }
 
 nav{
@@ -320,8 +324,10 @@ h1{
     }
     .vips{
     width: 100%;
+    background-color: #fff;
+    padding: 10px;
+    margin: auto;
     }
-   
     header{
     text-align: center;
     padding: 50px;

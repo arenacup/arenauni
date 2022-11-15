@@ -58,6 +58,10 @@ img{
     margin: auto;
 }
 
+.mvp{
+    width: 50%;
+}
+
 nav{
     height: 125px;
     border: 1px solid rgb(0, 0, 0);
@@ -212,6 +216,9 @@ h1{
 }
 
 @media screen and (max-width: 1200px) {
+    .mvp{
+        width: 100%;
+    }
     .constructor{
     width: 325px;
     height: 1450px;
